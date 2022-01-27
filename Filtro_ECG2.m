@@ -2,7 +2,7 @@ clear
 close all
 clc
 %% Leer Archivo
-signal = load('mediciones_F.txt');
+signal = load('./Mediciones/mediciones5.txt');
 
 t = linspace(0,60,length(signal));
 length(t)
@@ -15,6 +15,7 @@ title('Señal ECG')
 xlabel('Tiempo [s]')
 ylabel('Amplitud [Volts]')
 grid on
+
 
 %% Filtros Digitales
 
@@ -106,8 +107,6 @@ xlabel('Tiempo');
 ylabel('Amplitud');
 ylim([2 4.5]);
 
-BPM_6s = length(pos);
-
 distance = [];
 
 for i=1:length(pos)-1
@@ -119,9 +118,9 @@ end
 BPM_dist = mean(distance);
 
 
-if (BPM_6s >= 60) && (BPM_6s <= 100)
+if (BPM_dist >= 60) && (BPM_dist  <= 100)
     disp('Ritmo cardiaco normal')
-elseif (BPM_6s < 60)
+elseif (BPM_dist  < 60)
     disp('Posible Braquicardia')
 else
     disp('Posible Taquicardia')

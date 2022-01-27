@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 signal = []
-title = './Mediciones/mediciones2_F.txt'
+title = './Mediciones/mediciones5.txt'
 
 with open(title, 'r') as f:
     # lines = f.readlines()
