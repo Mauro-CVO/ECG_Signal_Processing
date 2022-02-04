@@ -1,3 +1,6 @@
+//Facultad de Ciencias
+//Elaborado por Mauro Cortés y Raul Rivas
+//Este codigo tiene la función de leer la señal proveniente del ADC
 
 float signal_ecg; // Crea Variable tipo float
 
