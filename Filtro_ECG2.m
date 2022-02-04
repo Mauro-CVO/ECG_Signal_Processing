@@ -1,3 +1,7 @@
+# Facultad de Ciencias
+# Elaborado por: Mauro Cortés y Raul Rivas
+# Procesamiento digital de la señal
+
 % Eliminamos los datos guardados en memoria y la consola
 clear
 close all
